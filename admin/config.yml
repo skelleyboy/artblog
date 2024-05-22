@@ -1,11 +1,12 @@
+# config.yml
+
 backend:
-  commit_messages:
-    create: Create {{collection}} “{{slug}}”
-    update: Update {{collection}} “{{slug}}”
-    delete: Delete {{collection}} “{{slug}}”
-    uploadMedia: Upload “{{path}}”
-    deleteMedia: Delete “{{path}}”
-    openAuthoring: '{{message}}'
-media_folder: '/uploads'
-media_library:
-   name: uploads
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: 'assets/uploads'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
