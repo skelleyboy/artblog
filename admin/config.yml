@@ -6,4 +6,6 @@ backend:
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
-media_folder: /uploads
+media_folder: '/uploads'
+media_library:
+   name: uploads
